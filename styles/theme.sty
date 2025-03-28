@@ -1,0 +1,41 @@
+\mode<presentation>
+
+\setbeamertemplate{footline}{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.2ex,dp=1ex]{footline}
+        \hfill
+        \insertframenumber\,/\,\inserttotalframenumber
+        \hspace{2ex}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.3cm]{footer bar}
+        \hbox{%
+            \begin{beamercolorbox}[wd=.10\paperwidth,ht=0.3cm,dp=0ex]{lightblue bar}
+            \end{beamercolorbox}%
+            \begin{beamercolorbox}[wd=.7\paperwidth,ht=0.3cm,dp=0ex]{mainblue bar}
+            \end{beamercolorbox}%
+            \begin{beamercolorbox}[wd=.1\paperwidth,ht=0.3cm,dp=0ex]{yellow bar}
+            \end{beamercolorbox}%
+            \begin{beamercolorbox}[wd=.1\paperwidth,ht=0.3cm,dp=0ex]{magenta bar}
+            \end{beamercolorbox}%
+            % \begin{beamercolorbox}[wd=.2\paperwidth,ht=0.3cm,dp=0ex]{white bar}
+            % \end{beamercolorbox}%
+        }
+    \end{beamercolorbox}
+}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Remove other elements for title
+% \setbeamertemplate{footline}{}  % Remove footer for title slide
+
+% Adjust margins if needed
+\setbeamersize{text margin left=1cm}
+\setbeamersize{text margin right=1cm}
+
+\setbeamertemplate{frametitle}
+{
+    \vspace*{0.35cm} % Add vertical space before the title
+    % \hspace*{0.6cm} % Add horizontal indentation
+    {\fontsize{24}{28}\selectfont\textcolor{lightgray}{\insertframetitle}\par} % Format the title text
+    % \vspace*{0.3cm} % Add space below the title
+}

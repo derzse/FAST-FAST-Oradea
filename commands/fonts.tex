@@ -1,0 +1,25 @@
+% Font configuration
+\usepackage{fontspec}
+
+% Main font (Lato)
+\setmainfont{Lato}[
+    Path = fonts/Lato/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]
+
+% Sans font (Raleway)
+\setsansfont{Raleway}[
+    Path = fonts/Raleway/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Regular % Using Regular instead of Light
+]
+
+% Font commands
+\newcommand{\heading}[1]{{\Large\sffamily\bfseries #1}}
+\newcommand{\subheading}[1]{{\large\sffamily #1}}
+\newcommand{\lighttext}[1]{{\sffamily #1}}

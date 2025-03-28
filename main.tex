@@ -1,0 +1,69 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{fontawesome5}
+\usetikzlibrary{positioning,shapes,arrows,calc}
+
+% Load custom styles
+\usepackage{./styles/colors}
+\usepackage{./styles/theme}
+\usepackage{./styles/fonts}
+\usepackage{./styles/commands}
+
+% Additional settings
+% \usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+% Custom commands for consistent styling
+\newcommand{\sectionslide}[1]{%
+    \begin{frame}[plain]
+        \begin{center}
+            \Huge\color{mainblue}#1
+        \end{center}
+    \end{frame}
+}
+
+\newcommand{\quoteslide}[1]{%
+    \begin{frame}[plain]
+        \begin{center}
+            \Large\itshape
+            ``#1''
+        \end{center}
+    \end{frame}
+}
+
+\newcommand{\bigicon}[1]{%
+    \begin{tikzpicture}
+        \node[minimum size=3cm,fill=lightblue,rounded corners] {\color{white}\Huge#1};
+    \end{tikzpicture}
+}
+
+% Presentation info
+\title{YOUR PRESENTATION TITLE}
+\author{Your Name}
+\institute{Your Institution}
+\date{\today}
+
+\begin{document}
+
+% Load section organization
+\input{sections}
+
+% \input{slides/title}
+% \input{slides/sample}
+% \input{slides/two-column}
+% \input{slides/quote}
+% \input{slides/big-concept}
+% \input{slides/three-columns}
+% \input{slides/big-numbers}
+% \input{slides/process}
+% \input{slides/mobile}
+% \input{slides/image}
+% \input{slides/table}
+% \input{slides/icons}
+% \input{slides/closing}
+
+\end{document}

@@ -1,0 +1,32 @@
+% Slide ordering and management
+\newcommand{\slidepath}{./slides}
+
+% Section commands
+\newcommand{\introductionslides}{
+    \input{\slidepath/title}
+    \input{\slidepath/sl1}
+    \input{\slidepath/sample}
+}
+
+\newcommand{\layoutslides}{
+    \input{\slidepath/two-column}
+    \input{\slidepath/three-columns}
+}
+
+\newcommand{\visualslides}{
+    \input{\slidepath/big-concept}
+    \input{\slidepath/quote}
+    \input{\slidepath/big-numbers}
+}
+
+\newcommand{\featureslides}{
+    \input{\slidepath/process}
+    \input{\slidepath/mobile}
+    \input{\slidepath/image}
+    \input{\slidepath/table}
+    \input{\slidepath/icons}
+}
+
+\newcommand{\closingslides}{
+    \input{\slidepath/closing}
+}

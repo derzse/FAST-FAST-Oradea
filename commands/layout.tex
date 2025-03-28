@@ -1,0 +1,32 @@
+% Layout configuration
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{enumitem}
+
+% Custom frame layouts
+\newcommand{\sectionframe}[1]{
+    \begin{frame}
+        \vspace{2em}
+        \centering
+        \heading{#1}
+    \end{frame}
+}
+
+% Content frame helpers
+\newcommand{\contentframe}[2]{
+    \begin{frame}
+        \frametitle{#1}
+        #2
+    \end{frame}
+}
+
+% Two-column layout (renamed from \twocolumn to \splitcols)
+\newcommand{\splitcols}[2]{
+    \begin{columns}[T]
+        \column{0.48\textwidth}
+        #1
+        \column{0.48\textwidth}
+        #2
+    \end{columns}
+}

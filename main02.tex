@@ -1,0 +1,39 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Import custom commands
+\input{commands/colors}
+\input{commands/fonts}
+\input{commands/layout}
+
+% Define theme colors
+\definecolor{darkblue}{HTML}{2185c5}
+\definecolor{lightblue}{HTML}{7ecefd}
+\definecolor{yellow}{HTML}{ff9715}
+\definecolor{magenta}{HTML}{f20253}
+\definecolor{darkgray}{HTML}{677480}
+\definecolor{lightgray}{HTML}{97abbc}
+
+% Set theme
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+% Custom color settings
+\setbeamercolor{title}{fg=darkblue}
+\setbeamercolor{frametitle}{fg=darkblue}
+\setbeamercolor{section in toc}{fg=darkblue}
+
+% Title page information
+\title{Your Presentation Title}
+\author{Your Name}
+\institute{Your Institution}
+\date{\today}
+
+\begin{document}
+
+% Include slide sections
+\input{slides/title}
+\input{slides/introduction}
+\input{slides/content}
+\input{slides/closing}
+
+\end{document}

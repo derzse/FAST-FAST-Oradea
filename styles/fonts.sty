@@ -1,0 +1,27 @@
+\usepackage{fontspec}
+
+% Main font (Lato)
+\setmainfont[
+    Path = fonts/Lato/,
+    UprightFont = Lato-Regular,
+    BoldFont = Lato-Bold,
+    ItalicFont = Lato-Italic,
+    Extension = .ttf
+]{Lato}
+
+% Sans font (Raleway)
+\setsansfont[
+    Path = fonts/Raleway/,
+    UprightFont = Raleway-Regular,
+    BoldFont = Raleway-Bold,
+    ItalicFont = Raleway-Regular,
+    Extension = .ttf
+]{Raleway}
+
+\setbeamerfont{title}{family=\sffamily,size=\LARGE}
+\setbeamerfont{frametitle}{family=\sffamily,series=\mdseries,size=\LARGE}
+\setbeamerfont{normal text}{size=\fontsize{9}{14}\selectfont}
+\setbeamerfont{column text}{size=\fontsize{9}{12}\selectfont}
+
+% Title slide specific settings
+\setbeamercolor{title}{fg=mainblue}

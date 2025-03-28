@@ -1,0 +1,96 @@
+% \begin{frame}
+% \frametitle{Our process is easy}
+% \begin{center}
+% \begin{tikzpicture}[
+%     arrow/.style={->,thick,mainblue},
+%     box/.style={minimum width=3cm,minimum height=1cm}
+% ]
+%     \node[box,fill=lightblue] (first) at (0,0) {First};
+%     \node[box,fill=mainblue,text=white] (second) at (4,0) {Second};
+%     \node[box,fill=magenta,text=white] (last) at (8,0) {Last};
+    
+%     \draw[arrow] (first) -- (second);
+%     \draw[arrow] (second) -- (last);
+    
+%     \node[text width=3cm,align=center,below=1cm of first] {
+%         \small Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%     };
+%     \node[text width=3cm,align=center,below=1cm of second] {
+%         \small Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%     };
+%     \node[text width=3cm,align=center,below=1cm of last] {
+%         \small Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%     };
+% \end{tikzpicture}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Competition Structure}
+% \begin{center}
+% \begin{tikzpicture}[
+%     arrow/.style={->,thick,mainblue},
+%     box/.style={minimum width=3.5cm,minimum height=1.2cm}
+% ]
+%     \node[box,fill=lightblue] (pdr) at (0,0) {PDR};
+%     \node[box,fill=mainblue,text=white] (cdr) at (4,0) {CDR};
+%     \node[box,fill=magenta,text=white] (launch) at (8,0) {Launch};
+    
+%     \draw[arrow] (pdr) -- (cdr);
+%     \draw[arrow] (cdr) -- (launch);
+    
+%     \node[text width=3.5cm,align=center,below=0.8cm of pdr] {
+%         \small Preliminary Design Review\\
+%         Initial concepts\\
+%         Requirements analysis
+%     };
+%     \node[text width=3.5cm,align=center,below=0.8cm of cdr] {
+%         \small Critical Design Review\\
+%         Detailed design\\
+%         Test results
+%     };
+%     \node[text width=3.5cm,align=center,below=0.8cm of launch] {
+%         \small Launch Campaign\\
+%         Final testing\\
+%         Flight operations
+%     };
+% \end{tikzpicture}
+% \end{center}
+
+% \bcolorbar[-0.125cm]
+% \end{frame}
+
+\begin{frame}
+\frametitle{Structura competiției}
+\begin{center}
+\begin{tikzpicture}[
+    arrow/.style={->,thick,mainblue},
+    box/.style={minimum width=3.5cm,minimum height=1.2cm}
+]
+    \node[box,fill=lightblue] (pdr) at (0,0) {PDR};
+    \node[box,fill=mainblue,text=white] (cdr) at (4,0) {CDR};
+    \node[box,fill=magenta,text=white] (launch) at (8,0) {Lansare};
+    
+    \draw[arrow] (pdr) -- (cdr);
+    \draw[arrow] (cdr) -- (launch);
+    
+    \node[text width=3.5cm,align=center,below=0.8cm of pdr] {
+        \small Analiza preliminară a designului\\
+        Concepte inițiale\\
+        Analiza cerințelor
+    };
+    \node[text width=3.5cm,align=center,below=0.8cm of cdr] {
+        \small Analiza critică a designului\\
+        Design detaliat\\
+        Rezultate teste
+    };
+    \node[text width=3.5cm,align=center,below=0.8cm of launch] {
+        \small Campania de lansare\\
+        Testare finală\\
+        Operațiuni de zbor
+    };
+\end{tikzpicture}
+\end{center}
+
+\bcolorbar[-0.125cm]
+\end{frame}
